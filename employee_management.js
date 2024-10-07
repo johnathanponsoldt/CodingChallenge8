@@ -57,3 +57,17 @@ class department { constructor(name) {
         return this.employees.reduce((total))
     }
 }
+
+// Task 5: Create and Manage Departments and Employees
+
+const devdepartment = new department('Development');
+const designdepartment = new department('Design');
+// creating two new departments
+
+const devemployee1 = new Employee('Jaxson', 70000, 'Developer', 'Development');
+const designemployee2 = new Employee('David', 85000, 'Lead Designer', 'Design');
+// creatig new employees
+
+const devmanager = new Manager('Jacob', 99000, 'Lead Developer', 'Development', 10000);
+const designManager = new Manager('Kate', 85000, 'Lead Designer', 'Design', 9000);
+// create managers
