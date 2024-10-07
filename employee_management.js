@@ -46,3 +46,14 @@ class Manager extends Employee {
 
     }
 }
+
+// Task 4: Handle Bonuses for Managers
+
+class department { constructor(name) {
+    this.name = name;
+    this.employees = [];
+}
+    calculateTotalSalaryWithBonus() {
+        return this.employees.reduce((total))
+    }
+}
