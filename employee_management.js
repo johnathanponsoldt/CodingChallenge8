@@ -33,3 +33,16 @@ console.log(`Total salary for Engineering: $${engineering.getDepartmentSalary()}
 console.log(`Total salary with bonuses for Engineering: $${engineering.calculateTotalSalaryWithBonus()}`);
 console.log(`Total salary for Marketing: $${marketing.getDepartmentSalary()}`);
 console.log(`Total salary with bonuses for Marketing: $${marketing.calculateTotalSalaryWithBonus()}`);
+
+// Task 3: Create a Manager Class that Inherits from Employee
+
+class Manager extends Employee {
+    constructor(name, salary, position, department, bonus) {
+        super(name, salary, position, department);
+        this.bonus = bonus;
+    }
+    getDetails() {
+        return `${this.name} works as a ${this.position}, earns $${this.salary}, and has a bonus of $${this.bonus}`;
+
+    }
+}
